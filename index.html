@@ -1425,65 +1425,7 @@
                             <span class="section-note" style="margin-bottom: 0.75rem;"><i class="fas fa-gift"></i> <span data-i18n="combo_note">Combos especiales</span></span>
                         </div>
                         <h3 class="font-fun text-center" data-i18n="combo_title" style="font-size: clamp(2rem, 4vw, 2.6rem); color: var(--brand-red);">Promociones para celebrar en grande</h3>
-                        <div class="combo-grid">
-                            <article class="combo-card">
-                                <h3 class="font-fun" data-i18n="combo_familiar_title">Combo Familiar</h3>
-                                <p data-i18n="combo_familiar_desc">Perfecto para reuniones familiares y cumpleaños en casa.</p>
-                                <ul>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);" aria-hidden="true"></i> <span data-i18n="combo_familiar_i1">Casa de brinco</span></li>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);" aria-hidden="true"></i> <span data-i18n="combo_familiar_i2">Máquina de Pop-Corn</span></li>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);" aria-hidden="true"></i> <span data-i18n="combo_familiar_i3">Algodón de Azúcar</span></li>
-                                </ul>
-                                <div class="combo-actions">
-                                    <span class="price-tag">Desde $155</span>
-                                    <button class="btn btn-primary" type="button" style="padding: 0.8rem 1.2rem; font-size: 0.95rem;" onclick="app.cart.addCombo('familiar')">
-                                        <i class="fas fa-cart-plus"></i> <span data-i18n="combo_add_btn">Añadir</span>
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="combo-card">
-                                <h3 class="font-fun" data-i18n="combo_explosivo_title">Combo Explosivo</h3>
-                                <p data-i18n="combo_explosivo_desc">Una mezcla completa de brincos y snacks para subir la emoción.</p>
-                                <ul>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);"></i> <span data-i18n="combo_explosivo_i1">Casa de brinco</span></li>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);"></i> <span data-i18n="combo_explosivo_i2">Máquina de Pop-Corn</span></li>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);"></i> <span data-i18n="combo_explosivo_i3">Máquina de Algodón de Azúcar</span></li>
-                                </ul>
-                                <div class="combo-actions">
-                                    <span class="price-tag">Desde $200</span>
-                                    <button class="btn btn-primary" type="button" style="padding: 0.8rem 1.2rem; font-size: 0.95rem;" onclick="app.cart.addCombo('explosivo')">
-                                        <i class="fas fa-cart-plus"></i> <span data-i18n="combo_add_btn">Añadir</span>
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="combo-card">
-                                <h3 class="font-fun" data-i18n="combo_3casas_title">3 Casas Especial</h3>
-                                <p data-i18n="combo_3casas_desc">Ideal para actividades grandes, escuelas o eventos con muchos niños.</p>
-                                <ul>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);"></i> <span data-i18n="combo_3casas_i1">3 casas de brinco</span></li>
-                                </ul>
-                                <div class="combo-actions">
-                                    <span class="price-tag">Desde $300</span>
-                                    <button class="btn btn-primary" type="button" style="padding: 0.8rem 1.2rem; font-size: 0.95rem;" onclick="app.cart.addCombo('tres-casas')">
-                                        <i class="fas fa-cart-plus"></i> <span data-i18n="combo_add_btn">Añadir</span>
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="combo-card">
-                                <h3 class="font-fun" data-i18n="combo_escolar_title">Promo Escolar</h3>
-                                <p data-i18n="combo_escolar_desc">Disponible de lunes a jueves para actividades escolares.</p>
-                                <ul>
-                                    <li><i class="fas fa-check-circle" style="color: var(--brand-green);"></i> <span data-i18n="combo_escolar_i1">Casa de brinco</span></li>
-                                    <li><i class="fas fa-clock" style="color: var(--brand-orange);"></i> <span data-i18n="combo_escolar_tag">Oferta válida de lunes a jueves</span></li>
-                                </ul>
-                                <div class="combo-actions">
-                                    <span class="price-tag">Desde $85</span>
-                                    <button class="btn btn-primary" type="button" style="padding: 0.8rem 1.2rem; font-size: 0.95rem;" onclick="app.cart.addCombo('escolar')">
-                                        <i class="fas fa-cart-plus"></i> <span data-i18n="combo_add_btn">Añadir</span>
-                                    </button>
-                                </div>
-                            </article>
-                        </div>
+                        <div class="combo-grid" id="combo-grid"></div>
                         <div class="combo-note">
                             <strong><i class="fas fa-map-marker-alt" style="color: var(--brand-red);"></i> <span data-i18n="combo_note_label">Nota importante:</span></strong>
                             <span data-i18n="combo_note_text">Los precios pueden variar dependiendo del pueblo, la distancia, disponibilidad y el tipo de servicio solicitado.</span>
@@ -1629,7 +1571,6 @@
                         <img src="https://res.cloudinary.com/dtw3qx4qq/image/upload/q_auto/f_auto/v1781739004/image1-logo_qhit9x.png" alt="Jiménez Jumping" width="90" height="90" loading="lazy" style="height: 90px; width: 90px; object-fit: contain; background: white; padding: 6px; border-radius: 18px; border: 3px solid var(--brand-purple); box-shadow: 0 4px 0 var(--brand-purple);">
                     </div>
                     <h2 class="font-fun text-center title-lg mb-1" style="font-size: 2.5rem;">Mi Cuenta</h2>
-                    <p class="text-center text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem; font-weight: 600; background: var(--bg-color); padding: 10px; border-radius: 8px;">(Admin dev: user 'admin', pass 'admin123')</p>
                     <form id="login-form" onsubmit="app.auth.handleLogin(event)">
                         <div class="form-group">
                             <label class="form-label">Usuario</label>
@@ -2308,7 +2249,7 @@
 
         const initDB = async () => {
             try {
-                const [svc, qts, cats, sups, purch, sets, revs, custs] = await Promise.all([
+                const [svc, qts, cats, sups, purch, sets, revs, custs, proms] = await Promise.all([
                     _sb.from('services').select('*').eq('active', true).order('id'),
                     _sb.from('quotes').select('*').order('created_at', { ascending: false }),
                     _sb.from('categories').select('*'),
@@ -2317,6 +2258,7 @@
                     _sb.from('settings').select('*'),
                     _sb.from('reviews').select('*').order('created_at', { ascending: false }),
                     _sb.from('customers').select('*').order('created_at', { ascending: false }),
+                    _sb.from('combos').select('*').order('created_at', { ascending: false }),
                 ]);
                 _db.inventory   = (svc.data   || []).map(_normSvc);
                 _db.quotes      = (qts.data    || []).map(_normQ);
@@ -2326,8 +2268,8 @@
                 _db.settings    = sets.data    || [];
                 _db.reviews     = revs.data    || [];
                 _db.customers   = (custs.data  || []).map(_normCust);
-                _db.users       = [{ username: 'admin', role: 'admin' }];
-                _db.promotions  = [];
+                _db.users       = [{ username: 'Yomar', role: 'admin' }];
+                _db.promotions  = (proms.data  || []).map(p => ({ ...p, desc: p.description || '' }));
             } catch(err) {
                 console.error('initDB error:', err);
             }
@@ -2479,9 +2421,9 @@
                     app.cart.addItem(item);
                 },
                 addCombo: (comboKey) => {
-                    const combo = COMBO_OFFERS[comboKey];
+                    const combo = _db.promotions.find(c => c.id === comboKey) || COMBO_OFFERS[comboKey];
                     if (!combo) return;
-                    app.cart.addItem(combo, `¡${combo.name} añadido al carrito!`);
+                    app.cart.addItem({ ...combo, desc: combo.desc || combo.description || '' }, `¡${combo.name} añadido al carrito!`);
                     app.cart.render();
                     document.getElementById('cart-drawer').classList.add('open');
                     document.getElementById('global-overlay').classList.add('active');
@@ -2736,15 +2678,17 @@
                         ]
                     },
                     promotion: {
-                        title: 'Promocion',
+                        title: 'Combo',
                         badge: 'Promociones',
                         idField: 'id',
                         fields: [
-                            { name: 'id', label: 'ID', type: 'text', required: true },
-                            { name: 'title', label: 'Titulo', type: 'text', required: true },
-                            { name: 'desc', label: 'Descripcion', type: 'text', required: true },
-                            { name: 'discount', label: 'Descuento', type: 'text', required: true },
-                            { name: 'status', label: 'Estado', type: 'select', options: ['Activa', 'Programada', 'Pausada'], required: true }
+                            { name: 'id',    label: 'ID (ej: familiar)',          type: 'text',   required: true },
+                            { name: 'name',  label: 'Nombre del combo',           type: 'text',   required: true },
+                            { name: 'desc',  label: 'Descripcion',                type: 'text',   required: true },
+                            { name: 'price', label: 'Precio ($)',                 type: 'number', step: '1', required: true },
+                            { name: 'items', label: 'Incluye (separado por comas)', type: 'text' },
+                            { name: 'color', label: 'Color CSS (ej: var(--brand-orange))', type: 'text' },
+                            { name: 'active',label: 'Activo',                     type: 'select', options: ['true','false'] }
                         ]
                     },
                     customer: {
@@ -2833,6 +2777,18 @@
                             record.total = 0;
                             record.items = [];
                         }
+                        if (type === 'promotion') {
+                            record.active = 'true';
+                            record.color  = record.color || 'var(--brand-blue)';
+                            record.items  = '';
+                        }
+                    }
+                    // Para combos: convertir items array → string y sincronizar desc
+                    if (type === 'promotion') {
+                        if (Array.isArray(record.items)) record.items = record.items.join(', ');
+                        if (!record.desc && record.description) record.desc = record.description;
+                        if (record.active === undefined) record.active = 'true';
+                        else record.active = String(record.active);
                     }
                     app.state.adminEditor = { type, originalId: rawRecord ? rawRecord[config.idField] : null };
                     document.getElementById('admin-editor-title').textContent = `${rawRecord ? 'Editar' : 'Nuevo'} ${config.title}`;
@@ -2880,8 +2836,8 @@
                         payload.color = payload.color || 'var(--brand-blue)';
                     }
                     // Mapeo tipo → tabla Supabase y clave _db
-                    const _tbl  = { sale:'quotes', purchase:'purchases', product:'services', category:'categories', supplier:'suppliers', customer:'customers' };
-                    const _stk  = { sale:'quotes', purchase:'purchases', product:'inventory',  category:'categories', supplier:'suppliers', customer:'customers' };
+                    const _tbl  = { sale:'quotes', purchase:'purchases', product:'services', category:'categories', supplier:'suppliers', customer:'customers', promotion:'combos' };
+                    const _stk  = { sale:'quotes', purchase:'purchases', product:'inventory',  category:'categories', supplier:'suppliers', customer:'customers', promotion:'combos' };
                     const table    = _tbl[editorState.type];
                     const stateKey = _stk[editorState.type];
                     const idField  = config.idField;
@@ -2889,8 +2845,16 @@
                     // Construir payload Supabase (convertir camelCase → snake_case donde aplique)
                     let sbP = { ...payload };
                     if(editorState.type === 'product')   { sbP.description = sbP.desc; sbP.in_use = Number(sbP.inUse||0); delete sbP.desc; delete sbP.inUse; }
-                    if(editorState.type === 'sale')       { sbP.alt_phone = sbP.altPhone||''; sbP.event_date = sbP.eventDate||sbP.date||''; delete sbP.altPhone; delete sbP.eventDate; }
+                    if(editorState.type === 'sale')       { sbP.alt_phone = sbP.altPhone||''; sbP.event_date = sbP.eventDate||sbP.date||''; delete sbP.altPhone; delete sbP.eventDate; delete sbP.date; }
                     if(editorState.type === 'supplier')   { sbP.total_supplied = Number(sbP.totalSupplied||0); delete sbP.totalSupplied; }
+                    if(editorState.type === 'promotion')  {
+                        sbP.description = sbP.desc || '';
+                        delete sbP.desc;
+                        sbP.items = typeof sbP.items === 'string'
+                            ? sbP.items.split(',').map(s => s.trim()).filter(Boolean)
+                            : (Array.isArray(sbP.items) ? sbP.items : []);
+                        sbP.active = sbP.active === 'true' || sbP.active === true;
+                    }
                     (async () => {
                         let savedRow = null;
                         if(table) {
@@ -2928,8 +2892,8 @@
                     const editorState = app.state.adminEditor;
                     if (!editorState) return;
                     const config = app.admin.editorConfig[editorState.type];
-                    const _tbl  = { sale:'quotes', purchase:'purchases', product:'services', category:'categories', supplier:'suppliers', customer:'customers' };
-                    const _stk  = { sale:'quotes', purchase:'purchases', product:'inventory',  category:'categories', supplier:'suppliers', customer:'customers' };
+                    const _tbl  = { sale:'quotes', purchase:'purchases', product:'services', category:'categories', supplier:'suppliers', customer:'customers', promotion:'combos' };
+                    const _stk  = { sale:'quotes', purchase:'purchases', product:'inventory',  category:'categories', supplier:'suppliers', customer:'customers', promotion:'combos' };
                     const table    = _tbl[editorState.type];
                     const stateKey = _stk[editorState.type];
                     const idField  = config.idField;
@@ -3200,9 +3164,27 @@
                     const promotions = app.admin.getPromotions();
                     const grid = document.getElementById('admin-promotions-grid');
                     if(!grid) return;
+                    if(!promotions.length) {
+                        grid.innerHTML = '<div class="admin-empty">No hay combos registrados. Crea uno con el botón de arriba.</div>';
+                        return;
+                    }
                     grid.innerHTML = promotions.map(p => {
                         const encoded = app.admin.encodeRecord(p);
-                        return `<div class="admin-panel-card"><span class="badge" style="background:${p.status === 'Activa' ? 'var(--brand-green)' : 'var(--brand-orange)'}; color:${p.status === 'Activa' ? 'white' : 'var(--brand-dark)'}">${p.status}</span><h3 class="font-fun mt-2 mb-1" style="color:var(--brand-blue); font-size:1.4rem;">${p.title}</h3><p class="text-muted" style="font-weight:600;">${p.desc}</p><p style="font-weight:800; color:var(--brand-red); margin-top:1rem;">Descuento: ${p.discount}</p><div class="admin-panel-footer"><div class="admin-inline-actions"><button type="button" class="admin-table-btn" onclick="app.admin.openEncodedEditor('promotion', '${encoded}')">Editar</button><button type="button" class="admin-table-btn delete" onclick="app.admin.deleteEntity('promotion', '${p.id}')">Eliminar</button></div></div></div>`;
+                        const items = Array.isArray(p.items) ? p.items : [];
+                        const itemsHtml = items.map(i => `<li style="font-weight:600;"><i class="fas fa-check-circle" style="color:var(--brand-green); margin-right:6px;"></i>${i}</li>`).join('');
+                        const activeLabel = p.active === false ? 'Inactivo' : 'Activo';
+                        const activeBg    = p.active === false ? 'var(--brand-red)' : 'var(--brand-green)';
+                        return `<div class="admin-panel-card" style="border-color:${p.color||'var(--brand-blue)'};">
+                            <span class="badge" style="background:${activeBg}; color:white;">${activeLabel}</span>
+                            <h3 class="font-fun mt-2 mb-1" style="color:${p.color||'var(--brand-blue)'}; font-size:1.4rem;">${p.name}</h3>
+                            <p class="text-muted" style="font-weight:600; margin-bottom:0.5rem;">${p.desc||p.description||''}</p>
+                            ${itemsHtml ? `<ul style="list-style:none; padding:0; margin-bottom:0.75rem;">${itemsHtml}</ul>` : ''}
+                            <p style="font-weight:800; font-size:1.3rem; color:var(--brand-green);">$${p.price}</p>
+                            <div class="admin-panel-footer"><div class="admin-inline-actions">
+                                <button type="button" class="admin-table-btn" onclick="app.admin.openEncodedEditor('promotion', '${encoded}')">Editar</button>
+                                <button type="button" class="admin-table-btn delete" onclick="app.admin.deleteEntity('promotion', '${p.id}')">Eliminar</button>
+                            </div></div>
+                        </div>`;
                     }).join('');
                 },
                 loadCustomers: () => {
@@ -3714,6 +3696,43 @@
                 if(yearEl && !yearEl.textContent) yearEl.textContent = new Date().getFullYear();
             },
 
+            renderCombos: () => {
+                const grid = document.getElementById('combo-grid');
+                if (!grid) return;
+                const combos = _db.promotions.filter(c => c.active !== false);
+                if (!combos.length) {
+                    // fallback a los combos estáticos si Supabase aún no cargó
+                    const fallback = Object.entries(COMBO_OFFERS);
+                    grid.innerHTML = fallback.map(([key, c]) => `
+                        <article class="combo-card">
+                            <h3 class="font-fun" style="color:${c.color||'var(--brand-blue)'};">${c.name}</h3>
+                            <p>${c.desc}</p>
+                            <div class="combo-actions">
+                                <span class="price-tag">Desde $${c.price}</span>
+                                <button class="btn btn-primary" type="button" style="padding:0.8rem 1.2rem;font-size:0.95rem;" onclick="app.cart.addCombo('${key}')">
+                                    <i class="fas fa-cart-plus"></i> Añadir
+                                </button>
+                            </div>
+                        </article>`).join('');
+                    return;
+                }
+                grid.innerHTML = combos.map(c => {
+                    const items = Array.isArray(c.items) ? c.items : [];
+                    const itemsHtml = items.map(i => `<li><i class="fas fa-check-circle" style="color:var(--brand-green);margin-right:6px;" aria-hidden="true"></i>${i}</li>`).join('');
+                    return `<article class="combo-card" style="border-color:${c.color||'var(--brand-blue)'};">
+                        <h3 class="font-fun" style="color:${c.color||'var(--brand-blue)'};">${c.name}</h3>
+                        <p>${c.description || c.desc || ''}</p>
+                        ${itemsHtml ? `<ul>${itemsHtml}</ul>` : ''}
+                        <div class="combo-actions">
+                            <span class="price-tag">Desde $${c.price}</span>
+                            <button class="btn btn-primary" type="button" style="padding:0.8rem 1.2rem;font-size:0.95rem;" onclick="app.cart.addCombo('${c.id}')">
+                                <i class="fas fa-cart-plus"></i> Añadir
+                            </button>
+                        </div>
+                    </article>`;
+                }).join('');
+            },
+
             bootstrap: async () => {
                 try {
                     // Aplicar tema antes de cargar datos
@@ -3726,6 +3745,7 @@
                     await initDB();
 
                     app.initPublicDOM();
+                    app.renderCombos();
                     app.reviews.loadPublic();
                     app.reviews.initStarPicker();
                     app.admin.applySettings();
